@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1480794396816587516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1480794396816587518}
+  - component: {fileID: 1480794396816587519}
+  - component: {fileID: 1480794398750618222}
+  - component: {fileID: 2587408836727831328}
+  - component: {fileID: 7986693129626931643}
+  - component: {fileID: 7560276483097632289}
+  - component: {fileID: 2248835187485710180}
+  - component: {fileID: 2296631074993370887}
+  - component: {fileID: 6459857190536478340}
+  - component: {fileID: 8086495599368991656}
+  - component: {fileID: 2865818314949979440}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1480794396816587518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 930, y: 570, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1480794396816587519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ffc118e50ae33d428841984719c9ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayerHealth: 100
+  playerHealth: 100
+  maxPlayerEnergy: 5000
+  playerEnergy: 5000
+  energyRechargeFactor: 1
+  energyRechargeRate: 0.05
+  energyRechargeDelay: 5
+  staminaRechargeRate: 0.05
+  energyBar: {fileID: 0}
+  emptyEnergyBar: {fileID: 0}
+  maxPlayerStamina: 400
+  playerStamina: 400
+  staminaRechargeFactor: 1
+  staminaRechargeDelay: 2
+  staminaBar: {fileID: 0}
+  emptyStaminaBar: {fileID: 0}
+  loadedItem: {fileID: 0}
+  playerObject: {fileID: 0}
+  maxCameraSmooth: 2
+  currentCameraSmooth: 0
+  cameraIsLocked: 0
+  inventory: {fileID: 0}
+  hotbarManager: {fileID: 0}
+--- !u!114 &1480794398750618222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefca510112c8ae47b2cff118779d341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCharacterSlots: []
+  CharacterBeltInstance: {fileID: 0}
+  playerLeftHand: {fileID: 0}
+  playerRightHand: {fileID: 0}
+--- !u!114 &2587408836727831328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f699265d0dace541a1afc260f058a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7986693129626931643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edeb3e1b113fb74d9eecf72a81acb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirePlume: {fileID: 0}
+  firePlume: {fileID: 0}
+  EtherialStorm: {fileID: 0}
+  etherialStorm: {fileID: 0}
+--- !u!114 &7560276483097632289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ed543aebad3fe49a82d8feb69d7aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShortSword: {fileID: 1673886280729100370, guid: 6da222a76c20da84a8531c95e65b518a, type: 3}
+  LongSword: {fileID: 1351838629271872518, guid: 05d6df06714772b4b9c055123f317cad, type: 3}
+  Mace: {fileID: 3556267043510310755, guid: cca0efa8fa11377438ceb5071ad39341, type: 3}
+--- !u!114 &2248835187485710180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a30e982ca730044db76ab59f72fe358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IronHelmet: {fileID: 0}
+  ironHelmet: {fileID: 1577006451429072, guid: ad89f676bde709244b48073d40d87d34, type: 3}
+  LeatherGloves: {fileID: 0}
+  leatherGloves: {fileID: 0}
+  GoldChestplate: {fileID: 0}
+  goldChestplate: {fileID: 0}
+--- !u!114 &2296631074993370887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d9da783eef7224cb005eb510d4aa61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6459857190536478340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b94f3d7af984ea42b116893e8ce271b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equippedWeapons: []
+--- !u!114 &8086495599368991656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d56430f3873add42ac3cc2f43eedf73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SinglePouch: {fileID: 2744508644887264866, guid: cd77b08660a687040a7186a38fc0b898, type: 3}
+  DoublePouch: {fileID: 3840036871981748324, guid: a9b289e2bf6114148a9181e8ab2b011e, type: 3}
+  NovicesPouch: {fileID: 2744508644887264866, guid: cd77b08660a687040a7186a38fc0b898, type: 3}
+  SpecialistsPouch: {fileID: 3840036871981748324, guid: a9b289e2bf6114148a9181e8ab2b011e, type: 3}
+  ExplorersPouch: {fileID: 2744508644887264866, guid: cd77b08660a687040a7186a38fc0b898, type: 3}
+  AdventurersPouch: {fileID: 3840036871981748324, guid: a9b289e2bf6114148a9181e8ab2b011e, type: 3}
+--- !u!114 &2865818314949979440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480794396816587516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93330a1a481cbc14caff0177b6df6427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
